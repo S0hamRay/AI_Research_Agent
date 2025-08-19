@@ -2,6 +2,8 @@
 
 A sophisticated **Retrieval Augmented Generation (RAG)** system that transforms your personal documents into an intelligent, queryable knowledge base using cutting-edge AI technologies (a.k.a. calling the ChatGPT API 👍).
 
+This was inspired by a retrieval-augmented generation project via Llama I came across on GitHub a while ago, will link it here as soon as I can find it again
+
 The email functionality is rudimentary and currently just for proof of concept. This was initially intended to run solely in the terminal because quickly accessing information from different research papers constitutes most of my use case for this project.
 
 ## 🚀 Features
