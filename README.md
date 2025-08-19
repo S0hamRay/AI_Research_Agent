@@ -1,6 +1,8 @@
 # Personal Knowledge Base Assistant - RAG System
 
-A sophisticated **Retrieval Augmented Generation (RAG)** system that transforms your personal documents into an intelligent, queryable knowledge base using cutting-edge AI technologies.
+A sophisticated **Retrieval Augmented Generation (RAG)** system that transforms your personal documents into an intelligent, queryable knowledge base using cutting-edge AI technologies (a.k.a. calling the ChatGPT API 👍).
+
+The email functionality is rudimentary and currently just for proof of concept. This was initially intended to run solely in the terminal because quickly accessing information from different research papers constitutes most of my use case for this project.
 
 ## 🚀 Features
 
@@ -94,21 +96,8 @@ python app2.py
 
 ## 🔍 How It Works
 
-### 1. Document Ingestion
-- Documents are loaded and processed using appropriate loaders
-- Text is split into manageable chunks using RecursiveCharacterTextSplitter
-- OpenAI embeddings convert text chunks into vector representations
+Document Ingestion => Vector Storage => Query Processing
 
-### 2. Vector Storage
-- Chunks are stored in Chroma vector database
-- Each chunk maintains metadata about its source document
-- Similarity search enables semantic retrieval
-
-### 3. Query Processing
-- User queries are converted to embeddings
-- Similar chunks are retrieved from the vector database
-- OpenAI language models generate contextual responses
-- Sources are provided for transparency
 
 ## 🎯 Use Cases
 
@@ -117,19 +106,6 @@ python app2.py
 - **Email Automation**: Automated responses based on your documents
 - **Learning Tool**: Study and review your materials interactively
 
-## 🔐 Security & Privacy
-
-- **Local Processing**: Documents are processed locally
-- **API Key Management**: Secure handling of OpenAI API keys
-- **Gmail OAuth**: Secure email authentication
-- **No Data Sharing**: Your documents stay private
-
-## 🚧 Limitations
-
-- Requires OpenAI API credits for embeddings and responses
-- Gmail API setup required for email functionality
-- Document processing limited to supported file types
-- Vector database size depends on document volume
 
 ## 🤝 Contributing
 
@@ -150,13 +126,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **LangChain** team for the excellent framework
 - **Chroma** for the vector database solution
 - **Google** for the Gmail API
-
-## 📞 Support
-
-For questions, issues, or contributions:
-- Open an issue on GitHub
-- Check the documentation
-- Review the code examples
 
 ---
 
